@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>cal</title>
+</head>
+<body>
+<h2 > CALCULATE THE VALUES <h2>
+<form name="myform">
+<input type="text" name="fst"><br>
+<input type="text" name="snd"><br>
+<input type="button" name="" value="ADD" onclick="add()">
+<input type="button" name="" value="Subtract" onclick="sub()">
+<input type="button" name="" value="Multiply" onclick="multi()">
+<input type="button" name="" value="Divide" onclick="divide()">
+<input type="button" name="" value="Rem" onclick="rem()"><br><br>
+<input text="text" name="result">
+</form>
+<script>
+function add() {
+fst=parseInt(myform.fst.value);
+snd=parseInt(myform.snd.value);
+result=fst+snd;
+myform.result.value=result;
+}
+function sub() {
+fst=parseInt(myform.fst.value);
+snd=parseInt(myform.snd.value);
+result=fst-snd;
+myform.result.value=result;
+}
+function multi() {
+fst=parseInt(myform.fst.value);
+snd=parseInt(myform.snd.value);
+result=fst*snd;
+myform.result.value=result;
+}
+function divide() {
+fst=parseInt(myform.fst.value);
+snd=parseInt(myform.snd.value);
+result=fst/snd;
+myform.result.value=result;
+}
+function rem() {
+fst=parseInt(myform.fst.value);
+snd=parseInt(myform.snd.value);
+result=fst%snd;
+myform.result.value=result;
+}
+
+</script>
+<body>
+<html>

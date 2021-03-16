@@ -1,0 +1,75 @@
+<html>
+<head><title>OPERATORS</title>
+<script>
+function calc() {
+	var n1 = parseFloat(document.getElementById('n1').value);
+	var n2 =parseFloat(document.getElementById('n2').value);
+	var oper = document.getElementById('operators').value;
+	if(oper=='+'){
+		document.getElementById('result').value=n1+n2;
+	}
+	if(oper=='-'){
+		document.getElementById('result').value=n1-n2;
+	}
+	if(oper=='/'){
+		document.getElementById('result').value=n1/n2;
+	}
+	if(oper=='*'){
+		document.getElementById('result').value=n1*n2;
+	}
+	if(oper=='%'){
+		document.getElementById('result').value=n1%n2;
+	}
+	if(oper=='!='){
+		document.getElementById('result').value=n1!=n2;
+	}
+	if(oper=='=='){
+		document.getElementById('result').value=n1==n2;
+	}
+	if(oper=='==='){
+		document.getElementById('result').value=n1===n2;
+	}
+	if(oper=='!=='){
+		document.getElementById('result').value=n1!==n2;
+	}
+	if(oper=='>'){
+		document.getElementById('result').value=n1>n2;
+	}
+	if(oper=='<'){
+		document.getElementById('result').value=n1<n2;
+		}
+	if(oper=='>='){
+		document.getElementById('result').value=n1>=n2;
+	}
+	if(oper=='<='){
+		document.getElementById('result').value=n1>=n2;
+	}
+	if(oper=='**'){
+		document.getElementById('result').value=n1**n2;
+	}
+	
+	
+	
+	
+}</script></head>
+<body>
+
+<input type="text" id="n1">
+<input type="text" id="n2">
+
+<select id="operators">
+<option value="+">+</option>
+<option value="-">-</option>
+<option value="/">/</option>
+<option value="*">*</option>
+<option value="%">%</option>
+<option value="!=">!=</option>
+<option value="==">==</option>
+<option value="===">===</option>
+<option value="!==">!==</option><option value=">">></option>
+<option value="<"><</option><option value=">=">>=</option><option value="<="><=</option>
+<option value="**">**</option></select>
+<input type="text" id="result">
+<button onclick="calc();"></button>s
+</body>
+</html>

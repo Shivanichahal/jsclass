@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object and Array in Object</title>
+</head>
+<body>
+	<ul>
+		<li>Create Object</li>
+		<li>Object Properties</li>
+		<li>Syntax</li>
+		<li>dot operator</li>
+		<li>Methods </li>
+	</ul>
+	<script type="text/javascript">
+		var a={
+			firstName:"Shivani",lastName:"Chahal",
+			detail:function (){
+				console.log(this.firstName+this.lastName);
+			}
+		};
+		var b=["Yukti","Pooja","Monika","Nancy","Ruchi","Mehak"];
+		console.log(b[1]);
+		a.detail();
+	</script>
+
+
+</body>
+</html>

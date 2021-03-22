@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Popup Boxes</title>
+ </head>
+ <body>
+ 	<button onclick="alert('I am alert')">Alert Box</button>
+ 	<button onclick="confirm('I am confirm box')">Confirm Box</button>
+ 	<button onclick="promptExample()">Prompt Box</button>
+ 	<script type="text/javascript">
+ 		function promptExample() {
+ 			 var txt;
+  var person = prompt("Please enter your name:", "Harry Potter");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+ 			// body...
+ 		}
+ 	</script> 
+ </body>
+ </html>
+ 

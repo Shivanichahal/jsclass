@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program to find the largest among three numbers</title>
+</head>
+<body>
+	<input type="text" id="n1">
+	<input type="text" id="n2">
+	<input type="text" id="n3">
+	<button onclick="compute()">compute</button>
+	<script type="text/javascript">
+		function compute() {
+			var n1=parseInt(document.getElementById('n1').value);
+			var n2=parseInt(document.getElementById('n2').value);
+			var n3=parseInt(document.getElementById('n3').value);
+
+			if(n1 >= n2 && n1 >= n3){
+				console.log("n1 is largest");
+
+			}
+			else if(n2 >= n1 && n2 >= n3){
+				console.log("n2 is largest")
+			}
+			else{
+				console.log("n3 is greater");
+			}
+			
+		}
+	</script>
+
+</body>
+</html>
